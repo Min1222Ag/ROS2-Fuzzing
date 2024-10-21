@@ -1,4 +1,4 @@
-# Automatic fuzzing for ROS 2
+# Refined ros2_fuzz
 
 ![Python tests](https://github.com/rosin-project/ros2_fuzz/workflows/Python%20tests/badge.svg)
 ![Hits](https://visitor-badge.glitch.me/badge?page_id=jnxf._automatic_fuzzing)
