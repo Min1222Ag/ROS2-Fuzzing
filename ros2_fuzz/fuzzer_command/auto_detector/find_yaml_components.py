@@ -19,7 +19,8 @@ def find_yaml_components(rootDir: str, overwrite: bool) -> None:
             if fname.endswith("cpp"):
                 cppfiles.append(os.path.join(dirName, fname))
 
-    logging.debug(f"Logged {len(cppfiles)} .cpp files")
+    print("Hi")
+    logging.debug(f"Logged {len(cppfiles)+100} .cpp files")
 
     # Catches expressions of the type create_publisher<A>("B"
     # being A the type being catched, and B the name of the service
@@ -40,11 +41,12 @@ def find_yaml_components(rootDir: str, overwrite: bool) -> None:
         r"create_server\s*<\s*(?P<type>[^>]+)\s*>\s*\(\s*[^,]+,\s*\"(?P<name>[^\"]+)\""
     )
     
-    create_instance_regex = (
-        r"createInstance\s*<\s*(?P<type>rclcpp_components::NodeFactory)\s*>\s*\(\s*(?P<name>[^)]+)\)"
-        )
+    #  Catches experssions of "auto client = std::make_shared<composition::Client>(options);"
+    create_component_regex = (
+    r"auto\s+(?P<name>\w+)\s*=\s*std::make_shared\s*<\s*(?P<type>composition::\w+)\s*>\s*\([^)]*\)"
+    )
 
-    logging.debug("Checking file contents")
+    logging.debug("Checking file contents!")
     found_publishers = dict()
     found_services = dict()
     found_actions = dict()
@@ -54,7 +56,7 @@ def find_yaml_components(rootDir: str, overwrite: bool) -> None:
         (create_publisher_regex, found_publishers),
         (create_service_regex, found_services),
         (create_action_regex, found_actions),
-        (create_instance_regex, found_compsition),
+        (create_component_regex, found_compsition),
     ]
 
     for filepath in cppfiles:
@@ -97,6 +99,7 @@ def find_yaml_components(rootDir: str, overwrite: bool) -> None:
   
     if len(found_publishers) + len(found_services) + len(found_actions) + len(found_compsition) == 0:
         logging.error(
+            len(found_compsition)
             "No component has been found\n"
             "Are you in (or have you provided) the correct path?"
         )
