@@ -19,7 +19,6 @@ def find_yaml_components(rootDir: str, overwrite: bool) -> None:
             if fname.endswith("cpp"):
                 cppfiles.append(os.path.join(dirName, fname))
 
-    print("Hi")
     logging.debug(f"Logged {len(cppfiles)+100} .cpp files")
 
     # Catches expressions of the type create_publisher<A>("B"
@@ -41,12 +40,12 @@ def find_yaml_components(rootDir: str, overwrite: bool) -> None:
         r"create_server\s*<\s*(?P<type>[^>]+)\s*>\s*\(\s*[^,]+,\s*\"(?P<name>[^\"]+)\""
     )
     
-    #  Catches experssions of "auto client = std::make_shared<composition::Client>(options);"
+    #  Catches experssions of "auto name = std::make_shared<type>();"
     create_component_regex = (
-    r"auto\s+(?P<name>\w+)\s*=\s*std::make_shared\s*<\s*(?P<type>composition::\w+)\s*>\s*\([^)]*\)"
+        r"auto\s+(?P<name>\w+)\s*=\s*std::make_shared\s*<\s*(?P<type>composition::\w+)\s*>\s*\([^)]*\)"
     )
 
-    logging.debug("Checking file contents!")
+    logging.debug("Checking file contents")
     found_publishers = dict()
     found_services = dict()
     found_actions = dict()
@@ -64,9 +63,9 @@ def find_yaml_components(rootDir: str, overwrite: bool) -> None:
             with open(filepath) as f:
                 contents = f.read()
                 for (regex, container) in finding_patterns:
-                    instance = re.search(regex, contents)
-                    if instance:
-                        logging.debug(f"Found instance at {filepath}")
+                    for instance in re.finditer(regex, contents):
+                        if instance:
+                            logging.debug(f"Found instance at {filepath}")
 
                         name = instance.group("name")
                         type = instance.group("type")
@@ -116,7 +115,7 @@ def find_yaml_components(rootDir: str, overwrite: bool) -> None:
 
 
 def map_type_to_headers_file(type: str) -> str:
-    mapping = {
+    std_msgs_mapping = {
         "std_msgs::msg::Char": "char",
         "std_msgs::msg::Float64": "float_64",
         "std_msgs::msg::Int32": "int_32",
@@ -148,8 +147,20 @@ def map_type_to_headers_file(type: str) -> str:
         "std_msgs::msg::UInt16": "u_int_16",
         "std_msgs::msg::UInt64MultiArray": "u_int_64_multi_array",
     }
+    
+    composition_mapping={
+        "composition::Talker": "talker_component",
+        "composition::Listener": "listener_component",
+        "composition::Server": "server_component",
+        "composition::Client": "client_component"
+    }
 
-    if type in mapping:
-        return "std_msgs/msg/" + mapping[type] + ".hpp"
+    if type in std_msgs_mapping:
+        return "std_msgs/msg/" + std_msgs_mapping[type] + ".hpp"
+    else:
+        return "TODO"
+
+    if type in composition_mapping:
+        return "composition/" + composition_mapping[type] + ".hpp"
     else:
         return "TODO"
