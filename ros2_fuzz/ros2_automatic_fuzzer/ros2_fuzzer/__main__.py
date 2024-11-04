@@ -42,6 +42,7 @@ def main():
     actions: dict = yaml_obj["actions"] if "actions" in yaml_obj else {}
     composition: dict = yaml_obj["composition"] if "composition" in yaml_obj else {}
 
+    services.items
     for (name, value) in ask_for_components(
         services=services, topics=topics, actions=actions, composition=composition,
     ):

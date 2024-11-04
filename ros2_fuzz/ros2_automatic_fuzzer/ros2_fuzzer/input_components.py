@@ -20,6 +20,11 @@ def component_options(components: dict):
         (component, component_name, validate_component(component))
         for (component_name, component) in components.items()
     ]
+
+    #if user want to debug errors
+    #for component, component_name, error in mapped_components:
+    #    print(f"Component: {component_name}, Error: {error}")  
+
     return [
         {"name": component_name, "disabled": error}
         if error
@@ -32,7 +37,7 @@ def ask_for_components(services: dict, topics: dict, actions: dict, composition:
     services_choices = component_options(services)
     topics_choices = component_options(topics)
     actions_choices = component_options(actions)
-    composition_choices=component_options(composition)
+    composition_choices = component_options(composition)
 
     all_choices = services_choices + topics_choices + actions_choices + composition_choices
 
