@@ -1,0 +1,27 @@
+topics:
+  chatter:
+    headers_file: std_msgs/msg/string.hpp
+    source: talker_component.cpp
+    type: std_msgs::msg::String
+    parameters: []
+composition:
+  talker:
+    headers_file: composition/talker_component.hpp
+    source: manual_composition.cpp
+    type: composition::Talker
+    parameters: []
+  listener:
+    headers_file: composition/listener_component.hpp
+    source: manual_composition.cpp
+    type: composition::Listener
+    parameters: []
+  server:
+    headers_file: composition/server_component.hpp
+    source: manual_composition.cpp
+    type: composition::Server
+    parameters: []
+  client:
+    headers_file: composition/client_component.hpp
+    source: manual_composition.cpp
+    type: composition::Client
+    parameters: []
