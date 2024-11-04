@@ -1,6 +1,6 @@
 topics:
   chatter:
-    headers_file: TODO
+    headers_file: std_msgs/msg/string.hpp
     source: talker_component.cpp
     type: std_msgs::msg::String
     parameters: []
