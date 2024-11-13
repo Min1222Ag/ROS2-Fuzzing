@@ -1,5 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
-#include "sensor_msgs/msg/image.hpp"  // 이미지 메시지 타입 포함
+#include "sensor_msgs/msg/image.hpp"
 
 namespace composition
 {
@@ -10,7 +10,7 @@ public:
   explicit ImageSubComponent(const rclcpp::NodeOptions & options)
   : Node("image_sub_component", options)
   {
-    // 이미지 구독자 생성
+    // create image subscriber
     sub_ = this->create_subscription<sensor_msgs::msg::Image>(
       "camera_image", 10,
       [this](const sensor_msgs::msg::Image::SharedPtr msg) {
