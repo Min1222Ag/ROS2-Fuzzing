@@ -1,5 +1,9 @@
 #include "rclcpp/rclcpp.hpp"
-#include "sensor_msgs/msg/image.hpp"  // 이미지 메시지 타입 포함
+#include "sensor_msgs/msg/image.hpp"
+#include <opencv2/opencv.hpp>
+#include <cv_bridge/cv_bridge.h>
+
+using namespace std::chrono_literals;
 
 namespace composition
 {
@@ -10,39 +14,50 @@ public:
   explicit ImagePubComponent(const rclcpp::NodeOptions & options)
   : Node("image_pub_component", options)
   {
-    // 이미지 퍼블리셔 생성
+    // Create Image Publisher
     pub_ = this->create_publisher<sensor_msgs::msg::Image>("camera_image", 10);
 
-    // 타이머로 주기적으로 퍼블리시
+    // Open Camera
+    cap_.open(0);
+    if (!cap_.isOpened()) {
+      RCLCPP_ERROR(this->get_logger(), "Failed to open camera");
+      return;
+    }
+
+    // Set Resolution
+    cap_.set(cv::CAP_PROP_FRAME_WIDTH, 640);
+    cap_.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
+
+    RCLCPP_INFO(this->get_logger(), "Camera opened with resolution: 640x480");
+
+    // Publishing Image every 100ms 
     timer_ = this->create_wall_timer(
-      1s, std::bind(&ImagePubComponent::publish_image, this));
+      100ms, std::bind(&ImagePubComponent::publish_image, this));
   }
 
 private:
   void publish_image()
   {
-    auto msg = std::make_unique<sensor_msgs::msg::Image>();
-    msg->header.stamp = this->now();
-    msg->header.frame_id = "camera_frame";
-    msg->height = 480;  // 예시 높이
-    msg->width = 640;   // 예시 너비
-    msg->encoding = "rgb8";
-    msg->is_bigendian = false;
-    msg->step = msg->width * 3;
+    cv::Mat frame;
+    cap_ >> frame;  // Capture Frame
+    if (frame.empty()) {
+      RCLCPP_WARN(this->get_logger(), "Captured empty frame");
+      return;
+    }
 
-    // 데이터 배열 초기화 (임의의 이미지 데이터로 채움)
-    msg->data.resize(msg->height * msg->step);
+    auto msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", frame).toImageMsg();
 
-    RCLCPP_INFO(this->get_logger(), "Publishing image with resolution: %dx%d", msg->width, msg->height);
+    RCLCPP_INFO(this->get_logger(), "Publishing image with resolution: %dx%d", frame.cols, frame.rows);
 
-    pub_->publish(std::move(msg));
+    pub_->publish(*msg);  //Publish
   }
 
   rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr pub_;
   rclcpp::TimerBase::SharedPtr timer_;
+  cv::VideoCapture cap_;
 };
 
-}  // namespace composition
+}
 
 #include "rclcpp_components/register_node_macro.hpp"
 RCLCPP_COMPONENTS_REGISTER_NODE(composition::ImagePubComponent)
