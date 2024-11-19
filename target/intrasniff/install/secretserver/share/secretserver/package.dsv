@@ -1,0 +1,3 @@
+source;share/secretserver/hook/cmake_prefix_path.ps1
+source;share/secretserver/hook/cmake_prefix_path.dsv
+source;share/secretserver/hook/cmake_prefix_path.sh
