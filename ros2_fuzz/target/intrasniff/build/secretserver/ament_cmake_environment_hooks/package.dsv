@@ -1,0 +1,4 @@
+source;share/secretserver/local_setup.bash
+source;share/secretserver/local_setup.dsv
+source;share/secretserver/local_setup.sh
+source;share/secretserver/local_setup.zsh

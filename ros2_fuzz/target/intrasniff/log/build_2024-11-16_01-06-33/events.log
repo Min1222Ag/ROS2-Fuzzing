@@ -1,0 +1,143 @@
+[0.000000] (-) TimerEvent: {}
+[0.000353] (secretserver) JobQueued: {'identifier': 'secretserver', 'dependencies': OrderedDict()}
+[0.000458] (secretserver) JobStarted: {'identifier': 'secretserver'}
+[0.003804] (secretserver) JobProgress: {'identifier': 'secretserver', 'progress': 'cmake'}
+[0.003928] (secretserver) Command: {'cmd': ['/usr/bin/cmake', '/home/dku-jsy/jsy/projects/intrasniff/src/secretserver', '-DCMAKE_INSTALL_PREFIX=/home/dku-jsy/jsy/projects/intrasniff/install/secretserver'], 'cwd': '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver', 'env': OrderedDict([('USER', 'dku-jsy'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_CLIENT', '121.173.216.89 65121 22301'), ('WARP_SSH_RCFILES', '/home/dku-jsy'), ('WARP_HONOR_PS1', '1'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dku-jsy'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/dku-jsy/jsy/projects/intrasniff/src'), ('LESS', '-R'), ('SSH_TTY', '/dev/pts/0'), ('ZSH', '/home/dku-jsy/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'UTF-8'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1003/bus'), ('P9K_TTY', 'old'), ('CONDA_CHANGEPS1', 'false'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dku-jsy'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '848'), ('TMPPREFIX', '/home/dku-jsy/.zshtmp-'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1003'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('TERM_PROGRAM', 'WarpTerminal'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('P9K_SSH', '1'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver'), ('SSH_CONNECTION', '121.173.216.89 65121 220.149.235.128 22301'), ('ZDOTDIR', '/home/dku-jsy'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.031778] (secretserver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.059965] (secretserver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.063653] (secretserver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099953] (-) TimerEvent: {}
+[0.106422] (secretserver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.110622] (secretserver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.110815] (secretserver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.111083] (secretserver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.113042] (secretserver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.169294] (secretserver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.173582] (secretserver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.173703] (secretserver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.173936] (secretserver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.175136] (secretserver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.200051] (-) TimerEvent: {}
+[0.256541] (secretserver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.298481] (secretserver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.300108] (-) TimerEvent: {}
+[0.317311] (secretserver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.319434] (secretserver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.323295] (secretserver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.329117] (secretserver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.336803] (secretserver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.357359] (secretserver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.358456] (secretserver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.396457] (secretserver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.400171] (-) TimerEvent: {}
+[0.409196] (secretserver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.427944] (secretserver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.431467] (secretserver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.467265] (secretserver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.467510] (secretserver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.500302] (-) TimerEvent: {}
+[0.516790] (secretserver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.517491] (secretserver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.544963] (secretserver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.584521] (secretserver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.585018] (secretserver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.585344] (secretserver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/dku-jsy/jsy/projects/intrasniff/src/secretserver/include>\n'}
+[0.585397] (secretserver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.585727] (secretserver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.585783] (secretserver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.586038] (secretserver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.586446] (secretserver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.586498] (secretserver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.586666] (secretserver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.587157] (secretserver) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.592263] (secretserver) StdoutLine: {'line': b'-- Generating done\n'}
+[0.593009] (secretserver) StdoutLine: {'line': b'-- Build files have been written to: /home/dku-jsy/jsy/projects/intrasniff/build/secretserver\n'}
+[0.597405] (secretserver) CommandEnded: {'returncode': 0}
+[0.597746] (secretserver) JobProgress: {'identifier': 'secretserver', 'progress': 'build'}
+[0.598209] (secretserver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver', '--', '-j16', '-l16'], 'cwd': '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver', 'env': OrderedDict([('USER', 'dku-jsy'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_CLIENT', '121.173.216.89 65121 22301'), ('WARP_SSH_RCFILES', '/home/dku-jsy'), ('WARP_HONOR_PS1', '1'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dku-jsy'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/dku-jsy/jsy/projects/intrasniff/src'), ('LESS', '-R'), ('SSH_TTY', '/dev/pts/0'), ('ZSH', '/home/dku-jsy/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'UTF-8'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1003/bus'), ('P9K_TTY', 'old'), ('CONDA_CHANGEPS1', 'false'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dku-jsy'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '848'), ('TMPPREFIX', '/home/dku-jsy/.zshtmp-'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1003'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('TERM_PROGRAM', 'WarpTerminal'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('P9K_SSH', '1'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver'), ('SSH_CONNECTION', '121.173.216.89 65121 220.149.235.128 22301'), ('ZDOTDIR', '/home/dku-jsy'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.600343] (-) TimerEvent: {}
+[0.627021] (secretserver) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/secretserver.dir/src/secretserver.cpp.o\x1b[0m\n'}
+[0.627130] (secretserver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o\x1b[0m\n'}
+[0.700477] (-) TimerEvent: {}
+[0.800737] (-) TimerEvent: {}
+[0.900981] (-) TimerEvent: {}
+[1.001223] (-) TimerEvent: {}
+[1.101478] (-) TimerEvent: {}
+[1.201729] (-) TimerEvent: {}
+[1.301979] (-) TimerEvent: {}
+[1.402221] (-) TimerEvent: {}
+[1.502464] (-) TimerEvent: {}
+[1.602720] (-) TimerEvent: {}
+[1.702969] (-) TimerEvent: {}
+[1.803219] (-) TimerEvent: {}
+[1.903481] (-) TimerEvent: {}
+[2.003748] (-) TimerEvent: {}
+[2.104009] (-) TimerEvent: {}
+[2.204268] (-) TimerEvent: {}
+[2.304518] (-) TimerEvent: {}
+[2.404763] (-) TimerEvent: {}
+[2.505004] (-) TimerEvent: {}
+[2.605255] (-) TimerEvent: {}
+[2.705504] (-) TimerEvent: {}
+[2.805749] (-) TimerEvent: {}
+[2.905990] (-) TimerEvent: {}
+[3.006224] (-) TimerEvent: {}
+[3.106467] (-) TimerEvent: {}
+[3.206720] (-) TimerEvent: {}
+[3.306974] (-) TimerEvent: {}
+[3.407224] (-) TimerEvent: {}
+[3.507428] (-) TimerEvent: {}
+[3.607672] (-) TimerEvent: {}
+[3.707916] (-) TimerEvent: {}
+[3.808167] (-) TimerEvent: {}
+[3.908386] (-) TimerEvent: {}
+[4.008553] (-) TimerEvent: {}
+[4.108760] (-) TimerEvent: {}
+[4.208976] (-) TimerEvent: {}
+[4.309176] (-) TimerEvent: {}
+[4.409380] (-) TimerEvent: {}
+[4.509583] (-) TimerEvent: {}
+[4.609787] (-) TimerEvent: {}
+[4.709982] (-) TimerEvent: {}
+[4.810178] (-) TimerEvent: {}
+[4.910379] (-) TimerEvent: {}
+[5.010585] (-) TimerEvent: {}
+[5.110796] (-) TimerEvent: {}
+[5.211011] (-) TimerEvent: {}
+[5.311214] (-) TimerEvent: {}
+[5.411439] (-) TimerEvent: {}
+[5.511695] (-) TimerEvent: {}
+[5.611941] (-) TimerEvent: {}
+[5.645352] (secretserver) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable dbinteract\x1b[0m\n'}
+[5.706672] (secretserver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable secretserver\x1b[0m\n'}
+[5.712066] (-) TimerEvent: {}
+[5.812307] (-) TimerEvent: {}
+[5.842324] (secretserver) StdoutLine: {'line': b'[100%] Built target dbinteract\n'}
+[5.906433] (secretserver) StdoutLine: {'line': b'[100%] Built target secretserver\n'}
+[5.911515] (secretserver) CommandEnded: {'returncode': 0}
+[5.912353] (-) TimerEvent: {}
+[5.924300] (secretserver) JobProgress: {'identifier': 'secretserver', 'progress': 'install'}
+[5.928329] (secretserver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver'], 'cwd': '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver', 'env': OrderedDict([('USER', 'dku-jsy'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_CLIENT', '121.173.216.89 65121 22301'), ('WARP_SSH_RCFILES', '/home/dku-jsy'), ('WARP_HONOR_PS1', '1'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dku-jsy'), ('MOTD_SHOWN', 'pam'), ('OLDPWD', '/home/dku-jsy/jsy/projects/intrasniff/src'), ('LESS', '-R'), ('SSH_TTY', '/dev/pts/0'), ('ZSH', '/home/dku-jsy/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'UTF-8'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1003/bus'), ('P9K_TTY', 'old'), ('CONDA_CHANGEPS1', 'false'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dku-jsy'), ('_', '/usr/bin/colcon'), ('_P9K_SSH_TTY', '/dev/pts/0'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '848'), ('TMPPREFIX', '/home/dku-jsy/.zshtmp-'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1003'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('TERM_PROGRAM', 'WarpTerminal'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'ko_KR.UTF-8'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('P9K_SSH', '1'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver'), ('SSH_CONNECTION', '121.173.216.89 65121 220.149.235.128 22301'), ('ZDOTDIR', '/home/dku-jsy'), ('_P9K_TTY', '/dev/pts/0'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.932249] (secretserver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.932381] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/lib/secretserver/secretserver\n'}
+[5.933722] (secretserver) StdoutLine: {'line': b'-- Set runtime path of "/home/dku-jsy/jsy/projects/intrasniff/install/secretserver/lib/secretserver/secretserver" to ""\n'}
+[5.933788] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/lib/secretserver/dbinteract\n'}
+[5.935143] (secretserver) StdoutLine: {'line': b'-- Set runtime path of "/home/dku-jsy/jsy/projects/intrasniff/install/secretserver/lib/secretserver/dbinteract" to ""\n'}
+[5.935216] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/ament_index/resource_index/package_run_dependencies/secretserver\n'}
+[5.935272] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/ament_index/resource_index/parent_prefix_path/secretserver\n'}
+[5.935337] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/environment/ament_prefix_path.sh\n'}
+[5.935392] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/environment/ament_prefix_path.dsv\n'}
+[5.935446] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/environment/path.sh\n'}
+[5.935498] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/environment/path.dsv\n'}
+[5.935557] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/local_setup.bash\n'}
+[5.935624] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/local_setup.sh\n'}
+[5.935680] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/local_setup.zsh\n'}
+[5.935732] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/local_setup.dsv\n'}
+[5.935783] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/package.dsv\n'}
+[5.935852] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/ament_index/resource_index/packages/secretserver\n'}
+[5.935919] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/cmake/secretserverConfig.cmake\n'}
+[5.935959] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/cmake/secretserverConfig-version.cmake\n'}
+[5.936010] (secretserver) StdoutLine: {'line': b'-- Installing: /home/dku-jsy/jsy/projects/intrasniff/install/secretserver/share/secretserver/package.xml\n'}
+[5.936856] (secretserver) CommandEnded: {'returncode': 0}
+[5.988851] (secretserver) JobEnded: {'identifier': 'secretserver', 'rc': 0}
+[5.989765] (-) EventReactorShutdown: {}

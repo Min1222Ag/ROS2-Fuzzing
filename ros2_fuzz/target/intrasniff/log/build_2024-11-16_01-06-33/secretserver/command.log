@@ -1,0 +1,6 @@
+Invoking command in '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dku-jsy/jsy/projects/intrasniff/src/secretserver -DCMAKE_INSTALL_PREFIX=/home/dku-jsy/jsy/projects/intrasniff/install/secretserver
+Invoked command in '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dku-jsy/jsy/projects/intrasniff/src/secretserver -DCMAKE_INSTALL_PREFIX=/home/dku-jsy/jsy/projects/intrasniff/install/secretserver
+Invoking command in '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dku-jsy/jsy/projects/intrasniff/build/secretserver -- -j16 -l16
+Invoked command in '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dku-jsy/jsy/projects/intrasniff/build/secretserver -- -j16 -l16
+Invoking command in '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dku-jsy/jsy/projects/intrasniff/build/secretserver
+Invoked command in '/home/dku-jsy/jsy/projects/intrasniff/build/secretserver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dku-jsy/jsy/projects/intrasniff/build/secretserver
