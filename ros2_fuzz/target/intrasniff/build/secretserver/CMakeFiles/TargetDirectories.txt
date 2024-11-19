@@ -1,0 +1,11 @@
+/home/dku-jsy/jsy/projects/intrasniff/build/secretserver/CMakeFiles/uninstall.dir
+/home/dku-jsy/jsy/projects/intrasniff/build/secretserver/CMakeFiles/secretserver_uninstall.dir
+/home/dku-jsy/jsy/projects/intrasniff/build/secretserver/CMakeFiles/secretserver.dir
+/home/dku-jsy/jsy/projects/intrasniff/build/secretserver/CMakeFiles/dbinteract.dir
+/home/dku-jsy/jsy/projects/intrasniff/build/secretserver/CMakeFiles/test.dir
+/home/dku-jsy/jsy/projects/intrasniff/build/secretserver/CMakeFiles/edit_cache.dir
+/home/dku-jsy/jsy/projects/intrasniff/build/secretserver/CMakeFiles/rebuild_cache.dir
+/home/dku-jsy/jsy/projects/intrasniff/build/secretserver/CMakeFiles/list_install_components.dir
+/home/dku-jsy/jsy/projects/intrasniff/build/secretserver/CMakeFiles/install.dir
+/home/dku-jsy/jsy/projects/intrasniff/build/secretserver/CMakeFiles/install/local.dir
+/home/dku-jsy/jsy/projects/intrasniff/build/secretserver/CMakeFiles/install/strip.dir
