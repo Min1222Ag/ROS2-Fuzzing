@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ros2-automatic-fuzzer-jnxf
+Version: 0.5.0
+Summary: An automatic ROS 2 fuzzer for C++ nodes
+Home-page: https://github.com/rosin-project/ros2_fuzz
+Author: Francisco Martínez Lasaca, Zhoulai Fu, Andrzej Wąsowski
+Author-email: frml@itu.dk, zhfu@itu.dk, wasowski@itu.dk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Fuzzing in ROS2 Composition
+
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/rosin-project/ros2_fuzz.svg)](https://github.com/Min1222Ag/ROS2-Fuzzing)
+
+### Introduction
+TBD
+
+

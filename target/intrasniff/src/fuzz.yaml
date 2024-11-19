@@ -1,0 +1,11 @@
+topics:
+  dbquery:
+    headers_file: std_msgs/msg/string.hpp
+    source: secretserver/src/dbinteract.cpp
+    type: std_msgs::msg::String
+    parameters: []
+  dbreply:
+    headers_file: std_msgs/msg/string.hpp
+    source: secretserver/src/secretserver.cpp
+    type: std_msgs::msg::String
+    parameters: []
