@@ -1,0 +1,112 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/afl-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/afl-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver
+[35m[1mConsolidate compiler generated dependencies of target dbinteract[0m
+[35m[1mConsolidate compiler generated dependencies of target secretserver[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/dbinteract_fuzzer.dir/src/dbinteract_generated.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/secretserver_fuzzer.dir/src/secretserver_generated.cpp.o[0m
+[0;36mafl-cc++4.00c[0m by Michal Zalewski, Laszlo Szekeres, Marc Heuse - mode: GCC-GCC
+[1;93m[!] [1;97mWARNING: [0mYou are using outdated instrumentation, install LLVM and/or gcc-plugin and use afl-clang-fast/afl-clang-lto/afl-gcc-fast instead![0m
+[0;36mafl-cc++4.00c[0m by Michal Zalewski, Laszlo Szekeres, Marc Heuse - mode: GCC-GCC
+[1;93m[!] [1;97mWARNING: [0mYou are using outdated instrumentation, install LLVM and/or gcc-plugin and use afl-clang-fast/afl-clang-lto/afl-gcc-fast instead![0m
+[ 50%] [32mBuilding CXX object CMakeFiles/secretserver.dir/src/secretserver.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o[0m
+[0;36mafl-cc++4.00c[0m by Michal Zalewski, Laszlo Szekeres, Marc Heuse - mode: GCC-GCC
+[1;93m[!] [1;97mWARNING: [0mYou are using outdated instrumentation, install LLVM and/or gcc-plugin and use afl-clang-fast/afl-clang-lto/afl-gcc-fast instead![0m
+[0;36mafl-cc++4.00c[0m by Michal Zalewski, Laszlo Szekeres, Marc Heuse - mode: GCC-GCC
+[1;93m[!] [1;97mWARNING: [0mYou are using outdated instrumentation, install LLVM and/or gcc-plugin and use afl-clang-fast/afl-clang-lto/afl-gcc-fast instead![0m
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:[m[K In member function ‘[01m[Kvoid FuzzerPublisher::timer_callback()[m[K’:
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:220:19:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kbool getString(std::string&, uint8_t)[m[K’
+  220 |     if (![01;31m[KgetString(_v0)[m[K) return;
+      |          [01;31m[K~~~~~~~~~^~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:160:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  160 | bool [01;36m[KgetString[m[K(std::string& s, uint8_t size)
+      |      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:221:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest[m[K’ was not declared in this scope
+  221 |     [01;31m[Krequest[m[K->data = _v0;
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:224:21:[m[K [01;31m[Kerror: [m[K‘[01m[KhowMuch[m[K’ was not declared in this scope
+  224 |                 if ([01;31m[KhowMuch[m[K == 0) {
+      |                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:[m[K In function ‘[01m[Kvoid __injector_init()[m[K’:
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:295:33:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+  295 |                 char* argv[] = {[01;35m[K"./my_fuzz_target"[m[K, NULL};
+      |                                 [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:[m[K In member function ‘[01m[Kvoid FuzzerPublisher::timer_callback()[m[K’:
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:220:19:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kbool getString(std::string&, uint8_t)[m[K’
+  220 |     if (![01;31m[KgetString(_v0)[m[K) return;
+      |          [01;31m[K~~~~~~~~~^~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:160:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  160 | bool [01;36m[KgetString[m[K(std::string& s, uint8_t size)
+      |      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:221:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest[m[K’ was not declared in this scope
+  221 |     [01;31m[Krequest[m[K->data = _v0;
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:224:21:[m[K [01;31m[Kerror: [m[K‘[01m[KhowMuch[m[K’ was not declared in this scope
+  224 |                 if ([01;31m[KhowMuch[m[K == 0) {
+      |                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:[m[K In function ‘[01m[Kvoid __injector_init()[m[K’:
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:295:33:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+  295 |                 char* argv[] = {[01;35m[K"./my_fuzz_target"[m[K, NULL};
+      |                                 [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/dbinteract_fuzzer.dir/build.make:76: CMakeFiles/dbinteract_fuzzer.dir/src/dbinteract_generated.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/dbinteract_fuzzer.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/secretserver_fuzzer.dir/build.make:76: CMakeFiles/secretserver_fuzzer.dir/src/secretserver_generated.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/secretserver_fuzzer.dir/all] Error 2
+[0;36mafl-as++4.00c[0m by Michal Zalewski
+[1;92m[+] [0mInstrumented 9177 locations (64-bit, non-hardened mode, ratio 100%).[0m
+[0;36mafl-as++4.00c[0m by Michal Zalewski
+[1;92m[+] [0mInstrumented 9648 locations (64-bit, non-hardened mode, ratio 100%).[0m
+[ 62%] [32m[1mLinking CXX executable dbinteract[0m
+[0;36mafl-cc++4.00c[0m by Michal Zalewski, Laszlo Szekeres, Marc Heuse - mode: GCC-GCC
+[1;93m[!] [1;97mWARNING: [0mYou are using outdated instrumentation, install LLVM and/or gcc-plugin and use afl-clang-fast/afl-clang-lto/afl-gcc-fast instead![0m
+[ 62%] Built target dbinteract
+[ 75%] [32m[1mLinking CXX executable secretserver[0m
+[0;36mafl-cc++4.00c[0m by Michal Zalewski, Laszlo Szekeres, Marc Heuse - mode: GCC-GCC
+[1;93m[!] [1;97mWARNING: [0mYou are using outdated instrumentation, install LLVM and/or gcc-plugin and use afl-clang-fast/afl-clang-lto/afl-gcc-fast instead![0m
+[ 75%] Built target secretserver
+gmake: *** [Makefile:146: all] Error 2

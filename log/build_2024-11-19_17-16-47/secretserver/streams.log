@@ -1,0 +1,13 @@
+[0.149s] Invoking command in '/home/emkim/projects/ros2/static_fuzz/build/secretserver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/emkim/projects/ros2/static_fuzz/install/secretserver
+[0.155s] [31mCMake Error at /usr/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake:49 (message):
+[0.155s]   Could not find compiler set in environment variable CC:
+[0.155s] 
+[0.155s]   /path/to/afl-clang-fast.
+[0.155s] Call Stack (most recent call first):
+[0.156s]   CMakeLists.txt:2 (project)
+[0.156s] 
+[0.156s] [0m
+[0.156s] [0mCMake Error: CMAKE_C_COMPILER not set, after EnableLanguage[0m
+[0.156s] [0mCMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage[0m
+[0.156s] -- Configuring incomplete, errors occurred!
+[0.156s] See also "/home/emkim/projects/ros2/static_fuzz/build/secretserver/CMakeFiles/CMakeOutput.log".

@@ -1,0 +1,10 @@
+[31mCMake Error at /usr/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake:49 (message):
+  Could not find compiler set in environment variable CC:
+
+  /path/to/afl-clang-fast.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+[0m
+[0mCMake Error: CMAKE_C_COMPILER not set, after EnableLanguage[0m
+[0mCMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage[0m
