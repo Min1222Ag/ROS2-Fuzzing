@@ -1,0 +1,3 @@
+[console_scripts]
+my_fuzzer = my_fuzzer.__main__:main
+

@@ -1,0 +1,7 @@
+setup.py
+my_fuzzer.egg-info/PKG-INFO
+my_fuzzer.egg-info/SOURCES.txt
+my_fuzzer.egg-info/dependency_links.txt
+my_fuzzer.egg-info/entry_points.txt
+my_fuzzer.egg-info/requires.txt
+my_fuzzer.egg-info/top_level.txt
