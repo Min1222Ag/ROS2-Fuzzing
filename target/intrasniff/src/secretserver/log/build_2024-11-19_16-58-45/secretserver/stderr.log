@@ -1,0 +1,40 @@
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:[m[K In member function ‘[01m[Kvoid FuzzerPublisher::timer_callback()[m[K’:
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:220:19:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kbool getString(std::string&, uint8_t)[m[K’
+  220 |     if (![01;31m[KgetString(_v0)[m[K) return;
+      |          [01;31m[K~~~~~~~~~^~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:160:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  160 | bool [01;36m[KgetString[m[K(std::string& s, uint8_t size)
+      |      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:221:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest[m[K’ was not declared in this scope
+  221 |     [01;31m[Krequest[m[K->data = _v0;
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:224:21:[m[K [01;31m[Kerror: [m[K‘[01m[KhowMuch[m[K’ was not declared in this scope
+  224 |                 if ([01;31m[KhowMuch[m[K == 0) {
+      |                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:[m[K In function ‘[01m[Kvoid __injector_init()[m[K’:
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract_generated.cpp:295:33:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+  295 |                 char* argv[] = {[01;35m[K"./my_fuzz_target"[m[K, NULL};
+      |                                 [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:[m[K In member function ‘[01m[Kvoid FuzzerPublisher::timer_callback()[m[K’:
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:220:19:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kbool getString(std::string&, uint8_t)[m[K’
+  220 |     if (![01;31m[KgetString(_v0)[m[K) return;
+      |          [01;31m[K~~~~~~~~~^~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:160:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  160 | bool [01;36m[KgetString[m[K(std::string& s, uint8_t size)
+      |      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:221:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest[m[K’ was not declared in this scope
+  221 |     [01;31m[Krequest[m[K->data = _v0;
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:224:21:[m[K [01;31m[Kerror: [m[K‘[01m[KhowMuch[m[K’ was not declared in this scope
+  224 |                 if ([01;31m[KhowMuch[m[K == 0) {
+      |                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:[m[K In function ‘[01m[Kvoid __injector_init()[m[K’:
+[01m[K/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver_generated.cpp:295:33:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+  295 |                 char* argv[] = {[01;35m[K"./my_fuzz_target"[m[K, NULL};
+      |                                 [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/dbinteract_fuzzer.dir/build.make:76: CMakeFiles/dbinteract_fuzzer.dir/src/dbinteract_generated.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/dbinteract_fuzzer.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/secretserver_fuzzer.dir/build.make:76: CMakeFiles/secretserver_fuzzer.dir/src/secretserver_generated.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/secretserver_fuzzer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

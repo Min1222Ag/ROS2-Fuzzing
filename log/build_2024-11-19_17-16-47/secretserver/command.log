@@ -1,0 +1,1 @@
+Invoking command in '/home/emkim/projects/ros2/static_fuzz/build/secretserver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/emkim/projects/ros2/static_fuzz/install/secretserver

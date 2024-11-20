@@ -22,8 +22,8 @@ def component_options(components: dict):
     ]
 
     #if user want to debug errors
-    #for component, component_name, error in mapped_components:
-    #    print(f"Component: {component_name}, Error: {error}")  
+    for component, component_name, error in mapped_components:
+        print(f"Component: {component_name}, Error: {error}")  
 
     return [
         {"name": component_name, "disabled": error}

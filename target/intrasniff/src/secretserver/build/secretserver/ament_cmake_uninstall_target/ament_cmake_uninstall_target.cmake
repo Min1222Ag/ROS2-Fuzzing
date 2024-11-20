@@ -55,6 +55,3 @@ endforeach()
 message(STATUS "Execute custom uninstall script")
 
 # begin of custom uninstall code
-
-# uninstall files installed using the symlink install functions
-include("/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")

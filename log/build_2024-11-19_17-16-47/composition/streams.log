@@ -1,0 +1,14 @@
+[0.007s] Invoking command in '/home/emkim/projects/ros2/static_fuzz/build/composition': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/emkim/projects/ros2/static_fuzz/target/composition -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/emkim/projects/ros2/static_fuzz/install/composition
+[0.151s] -- Configuring incomplete, errors occurred!
+[0.151s] See also "/home/emkim/projects/ros2/static_fuzz/build/composition/CMakeFiles/CMakeOutput.log".
+[0.151s] [31mCMake Error at /usr/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake:49 (message):
+[0.151s]   Could not find compiler set in environment variable CC:
+[0.151s] 
+[0.151s]   /path/to/afl-clang-fast.
+[0.151s] Call Stack (most recent call first):
+[0.151s]   CMakeLists.txt:3 (project)
+[0.151s] 
+[0.151s] [0m
+[0.152s] [0mCMake Error: CMAKE_C_COMPILER not set, after EnableLanguage[0m
+[0.152s] [0mCMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage[0m
+[0.153s] Invoked command in '/home/emkim/projects/ros2/static_fuzz/build/composition' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/emkim/projects/ros2/static_fuzz/target/composition -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/emkim/projects/ros2/static_fuzz/install/composition

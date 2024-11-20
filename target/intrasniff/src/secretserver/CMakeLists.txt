@@ -21,10 +21,20 @@ add_executable(secretserver src/secretserver.cpp)
 ament_target_dependencies(secretserver rclcpp std_msgs)
 add_executable(dbinteract src/dbinteract.cpp)
 ament_target_dependencies(dbinteract rclcpp std_msgs)
+
 target_include_directories(secretserver PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 target_compile_features(secretserver PUBLIC c_std_99 cxx_std_20)  # Require C99 and C++17
+
+# was added after ros2_fuzzer
+add_executable(dbinteract_fuzzer src/dbinteract_generated.cpp)
+ament_target_dependencies(dbinteract_fuzzer rclcpp std_msgs)
+install(TARGETS dbinteract_fuzzer DESTINATION lib/${PROJECT_NAME})
+
+add_executable(secretserver_fuzzer src/secretserver_generated.cpp)
+ament_target_dependencies(secretserver_fuzzer rclcpp std_msgs)
+install(TARGETS secretserver_fuzzer DESTINATION lib/${PROJECT_NAME})
 
 install(TARGETS secretserver dbinteract
   DESTINATION lib/${PROJECT_NAME})

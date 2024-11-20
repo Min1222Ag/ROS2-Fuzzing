@@ -25,7 +25,7 @@ def find_yaml_components(rootDir: str, overwrite: bool) -> None:
     # being A the type being catched, and B the name of the service
     create_publisher_regex = (
         r"create_publisher\s*<\s*(?P<type>[^>]+)\s*>\s*\(\s*\"(?P<name>[^\"]+)\""
-        #r"createInstance\s*<\s*(?P<type>rclcpp_components::NodeFactory)\s*>\s*\(\s*\"(?P<name>[^\"]+)\""
+
     )
 
     # Catches expressions of the type create_service<A>("B"
@@ -75,7 +75,7 @@ def find_yaml_components(rootDir: str, overwrite: bool) -> None:
 
                         container[name] = {
                             "headers_file": map_type_to_headers_file(type),
-                            "source": os.path.relpath(filepath, start=rootDir),
+                            "source": filepath, #os.path.relpath(filepath, start=rootDir),
                             "type": type,
                             "parameters": [],
                         }

@@ -1,0 +1,146 @@
+[0.000000] (-) TimerEvent: {}
+[0.000119] (secretserver) JobQueued: {'identifier': 'secretserver', 'dependencies': OrderedDict()}
+[0.000135] (secretserver) JobStarted: {'identifier': 'secretserver'}
+[0.003712] (secretserver) JobProgress: {'identifier': 'secretserver', 'progress': 'cmake'}
+[0.003901] (secretserver) Command: {'cmd': ['/usr/bin/cmake', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver'], 'cwd': '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emkim'), ('SSH_CLIENT', '172.23.14.29 9583 22301'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{name}] [{severity}] [{time}]: {message}'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/emkim'), ('OLDPWD', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('_colcon_cd_root', '/home/emkim/robot_ws'), ('COLCON_PREFIX_PATH', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emkim'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1039'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/emkim/.local/bin:/home/emkim/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.23.14.29 9583 220.149.235.128 22301'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/install/secretserver:/opt/ros/humble')]), 'shell': False}
+[0.031704] (secretserver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.059254] (secretserver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.062895] (secretserver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099643] (-) TimerEvent: {}
+[0.100134] (secretserver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.105336] (secretserver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.105451] (secretserver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.105766] (secretserver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.107744] (secretserver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.154124] (secretserver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.158184] (secretserver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.158274] (secretserver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.158521] (secretserver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.159551] (secretserver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199739] (-) TimerEvent: {}
+[0.239306] (secretserver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.271057] (secretserver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.281507] (secretserver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.299831] (-) TimerEvent: {}
+[0.300431] (secretserver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.302577] (secretserver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.306410] (secretserver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.312102] (secretserver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.319720] (secretserver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.339970] (secretserver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.341084] (secretserver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.379160] (secretserver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.391784] (secretserver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.399934] (-) TimerEvent: {}
+[0.410539] (secretserver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.414207] (secretserver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.449496] (secretserver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.449728] (secretserver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.485700] (secretserver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.486286] (secretserver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.499999] (-) TimerEvent: {}
+[0.513514] (secretserver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.554584] (secretserver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.558843] (secretserver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.559140] (secretserver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/include>\n'}
+[0.559194] (secretserver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.563249] (secretserver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.563305] (secretserver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.563968] (secretserver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.565159] (secretserver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.565908] (secretserver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.570005] (secretserver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.570062] (secretserver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.570715] (secretserver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.571258] (secretserver) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.576647] (secretserver) StdoutLine: {'line': b'-- Generating done\n'}
+[0.577681] (secretserver) StdoutLine: {'line': b'-- Build files have been written to: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver\n'}
+[0.582097] (secretserver) CommandEnded: {'returncode': 0}
+[0.583064] (secretserver) JobProgress: {'identifier': 'secretserver', 'progress': 'build'}
+[0.583140] (secretserver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver', '--', '-j16', '-l16'], 'cwd': '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emkim'), ('SSH_CLIENT', '172.23.14.29 9583 22301'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{name}] [{severity}] [{time}]: {message}'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/emkim'), ('OLDPWD', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('_colcon_cd_root', '/home/emkim/robot_ws'), ('COLCON_PREFIX_PATH', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emkim'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1039'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/emkim/.local/bin:/home/emkim/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.23.14.29 9583 220.149.235.128 22301'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/install/secretserver:/opt/ros/humble')]), 'shell': False}
+[0.600090] (-) TimerEvent: {}
+[0.601842] (secretserver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dbinteract\x1b[0m\n'}
+[0.601925] (secretserver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target secretserver\x1b[0m\n'}
+[0.610571] (secretserver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/secretserver.dir/src/secretserver.cpp.o\x1b[0m\n'}
+[0.610684] (secretserver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o\x1b[0m\n'}
+[0.700219] (-) TimerEvent: {}
+[0.800454] (-) TimerEvent: {}
+[0.900690] (-) TimerEvent: {}
+[1.000924] (-) TimerEvent: {}
+[1.101147] (-) TimerEvent: {}
+[1.201344] (-) TimerEvent: {}
+[1.301577] (-) TimerEvent: {}
+[1.401810] (-) TimerEvent: {}
+[1.502039] (-) TimerEvent: {}
+[1.602264] (-) TimerEvent: {}
+[1.702501] (-) TimerEvent: {}
+[1.802735] (-) TimerEvent: {}
+[1.902971] (-) TimerEvent: {}
+[2.003203] (-) TimerEvent: {}
+[2.103445] (-) TimerEvent: {}
+[2.203671] (-) TimerEvent: {}
+[2.303901] (-) TimerEvent: {}
+[2.404128] (-) TimerEvent: {}
+[2.504354] (-) TimerEvent: {}
+[2.604582] (-) TimerEvent: {}
+[2.704779] (-) TimerEvent: {}
+[2.804994] (-) TimerEvent: {}
+[2.905229] (-) TimerEvent: {}
+[3.005479] (-) TimerEvent: {}
+[3.105742] (-) TimerEvent: {}
+[3.205982] (-) TimerEvent: {}
+[3.306220] (-) TimerEvent: {}
+[3.406448] (-) TimerEvent: {}
+[3.506684] (-) TimerEvent: {}
+[3.606924] (-) TimerEvent: {}
+[3.707158] (-) TimerEvent: {}
+[3.807400] (-) TimerEvent: {}
+[3.907621] (-) TimerEvent: {}
+[4.007848] (-) TimerEvent: {}
+[4.108064] (-) TimerEvent: {}
+[4.208303] (-) TimerEvent: {}
+[4.308522] (-) TimerEvent: {}
+[4.408764] (-) TimerEvent: {}
+[4.508985] (-) TimerEvent: {}
+[4.609215] (-) TimerEvent: {}
+[4.709440] (-) TimerEvent: {}
+[4.809672] (-) TimerEvent: {}
+[4.909899] (-) TimerEvent: {}
+[5.010130] (-) TimerEvent: {}
+[5.110355] (-) TimerEvent: {}
+[5.210589] (-) TimerEvent: {}
+[5.310830] (-) TimerEvent: {}
+[5.411061] (-) TimerEvent: {}
+[5.511263] (-) TimerEvent: {}
+[5.589649] (secretserver) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable secretserver\x1b[0m\n'}
+[5.599994] (secretserver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable dbinteract\x1b[0m\n'}
+[5.611355] (-) TimerEvent: {}
+[5.711602] (-) TimerEvent: {}
+[5.794568] (secretserver) StdoutLine: {'line': b'[100%] Built target secretserver\n'}
+[5.799975] (secretserver) StdoutLine: {'line': b'[100%] Built target dbinteract\n'}
+[5.805329] (secretserver) CommandEnded: {'returncode': 0}
+[5.811664] (-) TimerEvent: {}
+[5.818224] (secretserver) JobProgress: {'identifier': 'secretserver', 'progress': 'install'}
+[5.822368] (secretserver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver'], 'cwd': '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'emkim'), ('SSH_CLIENT', '172.23.14.29 9583 22301'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{name}] [{severity}] [{time}]: {message}'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/emkim'), ('OLDPWD', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('_colcon_cd_root', '/home/emkim/robot_ws'), ('COLCON_PREFIX_PATH', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'emkim'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1039'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/emkim/.local/bin:/home/emkim/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.23.14.29 9583 220.149.235.128 22301'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/emkim/projects/ros2/static_fuzz/target/intrasniff/install/secretserver:/opt/ros/humble')]), 'shell': False}
+[5.826027] (secretserver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.826301] (secretserver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.826479] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/lib/secretserver/secretserver\n'}
+[5.826598] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/lib/secretserver/dbinteract\n'}
+[5.826704] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/ament_index/resource_index/package_run_dependencies/secretserver\n'}
+[5.826792] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/ament_index/resource_index/parent_prefix_path/secretserver\n'}
+[5.826872] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/environment/ament_prefix_path.sh\n'}
+[5.826950] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/environment/ament_prefix_path.dsv\n'}
+[5.827026] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/environment/path.sh\n'}
+[5.827110] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/environment/path.dsv\n'}
+[5.827187] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/local_setup.bash\n'}
+[5.827262] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/local_setup.sh\n'}
+[5.827335] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/local_setup.zsh\n'}
+[5.827406] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/local_setup.dsv\n'}
+[5.827456] (secretserver) StdoutLine: {'line': b'-- Symlinking: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/package.dsv\n'}
+[5.831674] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/ament_index/resource_index/packages/secretserver\n'}
+[5.831765] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/cmake/secretserverConfig.cmake\n'}
+[5.831824] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/cmake/secretserverConfig-version.cmake\n'}
+[5.831904] (secretserver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/install/secretserver/share/secretserver/package.xml\n'}
+[5.832844] (secretserver) CommandEnded: {'returncode': 0}
+[5.859803] (secretserver) JobEnded: {'identifier': 'secretserver', 'rc': 0}
+[5.860103] (-) EventReactorShutdown: {}
