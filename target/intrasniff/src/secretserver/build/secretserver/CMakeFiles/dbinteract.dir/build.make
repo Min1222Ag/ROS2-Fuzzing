@@ -73,15 +73,15 @@ CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o: CMakeFiles/dbinteract.dir/flags.
 CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o: ../../src/dbinteract.cpp
 CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o: CMakeFiles/dbinteract.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o"
-	/usr/bin/afl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o -MF CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o.d -o CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o -c /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract.cpp
+	/usr/bin/afl-clang-fast++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o -MF CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o.d -o CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o -c /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract.cpp
 
 CMakeFiles/dbinteract.dir/src/dbinteract.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dbinteract.dir/src/dbinteract.cpp.i"
-	/usr/bin/afl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract.cpp > CMakeFiles/dbinteract.dir/src/dbinteract.cpp.i
+	/usr/bin/afl-clang-fast++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract.cpp > CMakeFiles/dbinteract.dir/src/dbinteract.cpp.i
 
 CMakeFiles/dbinteract.dir/src/dbinteract.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dbinteract.dir/src/dbinteract.cpp.s"
-	/usr/bin/afl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract.cpp -o CMakeFiles/dbinteract.dir/src/dbinteract.cpp.s
+	/usr/bin/afl-clang-fast++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/dbinteract.cpp -o CMakeFiles/dbinteract.dir/src/dbinteract.cpp.s
 
 # Object files for target dbinteract
 dbinteract_OBJECTS = \

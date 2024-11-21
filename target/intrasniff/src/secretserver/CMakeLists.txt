@@ -2,12 +2,21 @@ cmake_minimum_required(VERSION 3.8)
 project(secretserver)
 
 if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 20) #origin 14
+  set(CMAKE_CXX_STANDARD 20) 
 endif()
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+# compiler option
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
+
+# AFL++ instrumentation compile flag
+set(AFL_SANITIZE_FLAGS "-fsanitize=address")
+set(AFL_DEBUG_FLAGS "-g")
+set(AFL_COVERAGE_FLAGS "-fsanitize-coverage=trace-pc-guard")
+
+add_compile_options(${AFL_SANITIZE_FLAGS} ${AFL_DEBUG_FLAGS} ${AFL_COVERAGE_FLAGS})
+add_link_options(${AFL_SANITIZE_FLAGS} ${AFL_DEBUG_FLAGS} ${AFL_COVERAGE_FLAGS})
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
@@ -27,14 +36,6 @@ target_include_directories(secretserver PUBLIC
   $<INSTALL_INTERFACE:include>)
 target_compile_features(secretserver PUBLIC c_std_99 cxx_std_20)  # Require C99 and C++17
 
-# was added after ros2_fuzzer
-add_executable(dbinteract_fuzzer src/dbinteract_generated.cpp)
-ament_target_dependencies(dbinteract_fuzzer rclcpp std_msgs)
-install(TARGETS dbinteract_fuzzer DESTINATION lib/${PROJECT_NAME})
-
-add_executable(secretserver_fuzzer src/secretserver_generated.cpp)
-ament_target_dependencies(secretserver_fuzzer rclcpp std_msgs)
-install(TARGETS secretserver_fuzzer DESTINATION lib/${PROJECT_NAME})
 
 install(TARGETS secretserver dbinteract
   DESTINATION lib/${PROJECT_NAME})
