@@ -1,0 +1,6 @@
+# environment variables:
+AFL_DEBUG=1
+AFL_KILL_SIGNAL=9
+AFL_USE_ASAN=1
+# command line:
+'afl-fuzz' '-i' 'seeds/' '-o' 'afl_output/' '--' './target/intrasniff/install/secretserver/lib/secretserver/secretserver' '@@'

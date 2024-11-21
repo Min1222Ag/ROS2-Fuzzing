@@ -223,32 +223,6 @@ dbinteract/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbinteract.dir/build.make CMakeFiles/dbinteract.dir/build
 .PHONY : dbinteract/fast
 
-#=============================================================================
-# Target rules for targets named dbinteract_fuzzer
-
-# Build rule for target.
-dbinteract_fuzzer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dbinteract_fuzzer
-.PHONY : dbinteract_fuzzer
-
-# fast build rule for target.
-dbinteract_fuzzer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbinteract_fuzzer.dir/build.make CMakeFiles/dbinteract_fuzzer.dir/build
-.PHONY : dbinteract_fuzzer/fast
-
-#=============================================================================
-# Target rules for targets named secretserver_fuzzer
-
-# Build rule for target.
-secretserver_fuzzer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 secretserver_fuzzer
-.PHONY : secretserver_fuzzer
-
-# fast build rule for target.
-secretserver_fuzzer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/secretserver_fuzzer.dir/build.make CMakeFiles/secretserver_fuzzer.dir/build
-.PHONY : secretserver_fuzzer/fast
-
 src/dbinteract.o: src/dbinteract.cpp.o
 .PHONY : src/dbinteract.o
 
@@ -272,30 +246,6 @@ src/dbinteract.s: src/dbinteract.cpp.s
 src/dbinteract.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbinteract.dir/build.make CMakeFiles/dbinteract.dir/src/dbinteract.cpp.s
 .PHONY : src/dbinteract.cpp.s
-
-src/dbinteract_generated.o: src/dbinteract_generated.cpp.o
-.PHONY : src/dbinteract_generated.o
-
-# target to build an object file
-src/dbinteract_generated.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbinteract_fuzzer.dir/build.make CMakeFiles/dbinteract_fuzzer.dir/src/dbinteract_generated.cpp.o
-.PHONY : src/dbinteract_generated.cpp.o
-
-src/dbinteract_generated.i: src/dbinteract_generated.cpp.i
-.PHONY : src/dbinteract_generated.i
-
-# target to preprocess a source file
-src/dbinteract_generated.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbinteract_fuzzer.dir/build.make CMakeFiles/dbinteract_fuzzer.dir/src/dbinteract_generated.cpp.i
-.PHONY : src/dbinteract_generated.cpp.i
-
-src/dbinteract_generated.s: src/dbinteract_generated.cpp.s
-.PHONY : src/dbinteract_generated.s
-
-# target to generate assembly for a file
-src/dbinteract_generated.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbinteract_fuzzer.dir/build.make CMakeFiles/dbinteract_fuzzer.dir/src/dbinteract_generated.cpp.s
-.PHONY : src/dbinteract_generated.cpp.s
 
 src/secretserver.o: src/secretserver.cpp.o
 .PHONY : src/secretserver.o
@@ -321,30 +271,6 @@ src/secretserver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/secretserver.dir/build.make CMakeFiles/secretserver.dir/src/secretserver.cpp.s
 .PHONY : src/secretserver.cpp.s
 
-src/secretserver_generated.o: src/secretserver_generated.cpp.o
-.PHONY : src/secretserver_generated.o
-
-# target to build an object file
-src/secretserver_generated.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/secretserver_fuzzer.dir/build.make CMakeFiles/secretserver_fuzzer.dir/src/secretserver_generated.cpp.o
-.PHONY : src/secretserver_generated.cpp.o
-
-src/secretserver_generated.i: src/secretserver_generated.cpp.i
-.PHONY : src/secretserver_generated.i
-
-# target to preprocess a source file
-src/secretserver_generated.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/secretserver_fuzzer.dir/build.make CMakeFiles/secretserver_fuzzer.dir/src/secretserver_generated.cpp.i
-.PHONY : src/secretserver_generated.cpp.i
-
-src/secretserver_generated.s: src/secretserver_generated.cpp.s
-.PHONY : src/secretserver_generated.s
-
-# target to generate assembly for a file
-src/secretserver_generated.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/secretserver_fuzzer.dir/build.make CMakeFiles/secretserver_fuzzer.dir/src/secretserver_generated.cpp.s
-.PHONY : src/secretserver_generated.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -361,21 +287,13 @@ help:
 	@echo "... secretserver_uninstall"
 	@echo "... uninstall"
 	@echo "... dbinteract"
-	@echo "... dbinteract_fuzzer"
 	@echo "... secretserver"
-	@echo "... secretserver_fuzzer"
 	@echo "... src/dbinteract.o"
 	@echo "... src/dbinteract.i"
 	@echo "... src/dbinteract.s"
-	@echo "... src/dbinteract_generated.o"
-	@echo "... src/dbinteract_generated.i"
-	@echo "... src/dbinteract_generated.s"
 	@echo "... src/secretserver.o"
 	@echo "... src/secretserver.i"
 	@echo "... src/secretserver.s"
-	@echo "... src/secretserver_generated.o"
-	@echo "... src/secretserver_generated.i"
-	@echo "... src/secretserver_generated.s"
 .PHONY : help
 
 

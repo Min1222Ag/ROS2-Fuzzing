@@ -73,15 +73,15 @@ CMakeFiles/secretserver.dir/src/secretserver.cpp.o: CMakeFiles/secretserver.dir/
 CMakeFiles/secretserver.dir/src/secretserver.cpp.o: ../../src/secretserver.cpp
 CMakeFiles/secretserver.dir/src/secretserver.cpp.o: CMakeFiles/secretserver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/secretserver.dir/src/secretserver.cpp.o"
-	/usr/bin/afl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/secretserver.dir/src/secretserver.cpp.o -MF CMakeFiles/secretserver.dir/src/secretserver.cpp.o.d -o CMakeFiles/secretserver.dir/src/secretserver.cpp.o -c /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver.cpp
+	/usr/bin/afl-clang-fast++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/secretserver.dir/src/secretserver.cpp.o -MF CMakeFiles/secretserver.dir/src/secretserver.cpp.o.d -o CMakeFiles/secretserver.dir/src/secretserver.cpp.o -c /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver.cpp
 
 CMakeFiles/secretserver.dir/src/secretserver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/secretserver.dir/src/secretserver.cpp.i"
-	/usr/bin/afl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver.cpp > CMakeFiles/secretserver.dir/src/secretserver.cpp.i
+	/usr/bin/afl-clang-fast++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver.cpp > CMakeFiles/secretserver.dir/src/secretserver.cpp.i
 
 CMakeFiles/secretserver.dir/src/secretserver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/secretserver.dir/src/secretserver.cpp.s"
-	/usr/bin/afl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver.cpp -o CMakeFiles/secretserver.dir/src/secretserver.cpp.s
+	/usr/bin/afl-clang-fast++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/src/secretserver.cpp -o CMakeFiles/secretserver.dir/src/secretserver.cpp.s
 
 # Object files for target secretserver
 secretserver_OBJECTS = \

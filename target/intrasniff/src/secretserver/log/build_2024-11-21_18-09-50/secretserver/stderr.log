@@ -1,0 +1,8 @@
+clangclang: : [0;1;31m[0;1;31merror: error: [0m[0m[1m[1munsupported argument 'address -g' to option 'fsanitize='unsupported argument 'address -g' to option 'fsanitize='[0m[0m
+
+gmake[2]: *** [CMakeFiles/dbinteract.dir/build.make:76: CMakeFiles/dbinteract.dir/src/dbinteract.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/secretserver.dir/build.make:76: CMakeFiles/secretserver.dir/src/secretserver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/dbinteract.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/secretserver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

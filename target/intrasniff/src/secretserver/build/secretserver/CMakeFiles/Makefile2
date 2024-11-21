@@ -65,8 +65,6 @@ CMAKE_BINARY_DIR = /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/s
 # The main recursive "all" target.
 all: CMakeFiles/secretserver.dir/all
 all: CMakeFiles/dbinteract.dir/all
-all: CMakeFiles/dbinteract_fuzzer.dir/all
-all: CMakeFiles/secretserver_fuzzer.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,8 +76,6 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/secretserver_uninstall.dir/clean
 clean: CMakeFiles/secretserver.dir/clean
 clean: CMakeFiles/dbinteract.dir/clean
-clean: CMakeFiles/dbinteract_fuzzer.dir/clean
-clean: CMakeFiles/secretserver_fuzzer.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -141,7 +137,7 @@ CMakeFiles/secretserver_uninstall.dir/clean:
 CMakeFiles/secretserver.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/secretserver.dir/build.make CMakeFiles/secretserver.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/secretserver.dir/build.make CMakeFiles/secretserver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver/CMakeFiles --progress-num=5,6 "Built target secretserver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver/CMakeFiles --progress-num=3,4 "Built target secretserver"
 .PHONY : CMakeFiles/secretserver.dir/all
 
 # Build rule for subdir invocation for target.
@@ -185,58 +181,6 @@ dbinteract: CMakeFiles/dbinteract.dir/rule
 CMakeFiles/dbinteract.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbinteract.dir/build.make CMakeFiles/dbinteract.dir/clean
 .PHONY : CMakeFiles/dbinteract.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/dbinteract_fuzzer.dir
-
-# All Build rule for target.
-CMakeFiles/dbinteract_fuzzer.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbinteract_fuzzer.dir/build.make CMakeFiles/dbinteract_fuzzer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbinteract_fuzzer.dir/build.make CMakeFiles/dbinteract_fuzzer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver/CMakeFiles --progress-num=3,4 "Built target dbinteract_fuzzer"
-.PHONY : CMakeFiles/dbinteract_fuzzer.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/dbinteract_fuzzer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dbinteract_fuzzer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver/CMakeFiles 0
-.PHONY : CMakeFiles/dbinteract_fuzzer.dir/rule
-
-# Convenience name for target.
-dbinteract_fuzzer: CMakeFiles/dbinteract_fuzzer.dir/rule
-.PHONY : dbinteract_fuzzer
-
-# clean rule for target.
-CMakeFiles/dbinteract_fuzzer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dbinteract_fuzzer.dir/build.make CMakeFiles/dbinteract_fuzzer.dir/clean
-.PHONY : CMakeFiles/dbinteract_fuzzer.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/secretserver_fuzzer.dir
-
-# All Build rule for target.
-CMakeFiles/secretserver_fuzzer.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/secretserver_fuzzer.dir/build.make CMakeFiles/secretserver_fuzzer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/secretserver_fuzzer.dir/build.make CMakeFiles/secretserver_fuzzer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver/CMakeFiles --progress-num=7,8 "Built target secretserver_fuzzer"
-.PHONY : CMakeFiles/secretserver_fuzzer.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/secretserver_fuzzer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/secretserver_fuzzer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emkim/projects/ros2/static_fuzz/target/intrasniff/src/secretserver/build/secretserver/CMakeFiles 0
-.PHONY : CMakeFiles/secretserver_fuzzer.dir/rule
-
-# Convenience name for target.
-secretserver_fuzzer: CMakeFiles/secretserver_fuzzer.dir/rule
-.PHONY : secretserver_fuzzer
-
-# clean rule for target.
-CMakeFiles/secretserver_fuzzer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/secretserver_fuzzer.dir/build.make CMakeFiles/secretserver_fuzzer.dir/clean
-.PHONY : CMakeFiles/secretserver_fuzzer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
