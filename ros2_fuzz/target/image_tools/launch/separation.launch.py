@@ -1,21 +1,22 @@
 import launch
-import launch_ros.actions
+from launch import LaunchDescription
+from launch_ros.actions import Node
 
 def generate_launch_description():
-    cam2image = launch_ros.actions.Node(
+    cam2image = Node(
         package='rosec_image_tools',
-        node_executable='cam2image',
+        executable='cam2image',
         #parameters=[{'width':1280, 'height':720, 'burger_mode':True, 'history': 'keep_last'}],
         #remappings=[('/image', '/burgerimage')],
         output='screen'
     )
 
-    showimage = launch_ros.actions.Node(
+    showimage = Node(
         package='rosec_image_tools',
-        node_executable='showimage',
+        executable='showimage',
         #parameters=[{'history': 'keep_last'}],
         #remappings=[('/image', '/burgerimage')],
         output='screen'
     )
 
-    return launch.LaunchDescription([cam2image, showimage])
+    return LaunchDescription([cam2image, showimage])
